@@ -1,0 +1,67 @@
+
+S -> Statement | Expression | ClassDeclaration | CollectionDeclaration | InterfaceDeclaration | FunctionsDeclaration
+
+Block ->
+
+
+// classes
+ClassDeclaration ->
+    ClassTitle ClassBlock
+
+ClassTitle ->
+    Abstraction class identifier InheritanceLine
+
+Abstraction ->
+    imaginary
+    \0
+InheritanceLine ->
+    Extension Implementations
+
+Extension ->
+    is identifier
+    \0
+
+Implementations ->
+    implements CommaSeparatedIdentifiersList
+    \0
+
+CommaSeparatedIdentifiersList ->
+    identifier
+    identifier , CommaSeparatedIdentifierList
+
+ClassBlock ->
+    { ClassImplementation }
+
+ClassImplementation ->
+    MemberDeclarations
+
+MemberDeclarations ->
+    MemberFieldDeclaration, MemberDeclaration
+    FunctionDeclaration, MemberDeclaration
+
+
+// fix to account for assignments and all: global static float x = 5, y, f = 3;
+// shared int g;
+// global static fuzzy a = 5;
+// CommaSeparatedAssignmentsAndIdentifiers
+MemberFieldDeclaration ->
+    MemberVariableQuantifiers SameTypeFieldDeclarations;
+
+SameTypeFieldDeclaration ->
+    PrimitiveType CommaSeparatedIdentifiersAndAssignments ;
+    identifier CommaSeparatedIdentifiersAndAssignments ;
+
+CommaSeparatedIdentifiersAndAssignments ->
+    identifier
+    Assignment
+    identifier , CommaSeparatedIdentifiersAndAssignments
+    Assignment , CommaSeparatedIdentifiersAndAssignments
+
+PrimitiveType ->
+    int
+    float
+    boolean
+    string
+
+Assignment ->
+    identifier = Expression;

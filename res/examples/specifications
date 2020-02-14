@@ -1,0 +1,195 @@
+
+structure:
+page is a file,
+book is a collection of pages,
+library is a collection of books.
+
+page Vector2 from Math book;
+
+read gc.core.*;
+
+global class Vector2 {
+
+    // private, public, shared
+    global float x, y;
+
+}
+
+////////////////////////////////////////////////
+global imaginary class List<T> {
+    T t;
+}
+
+(somewhere there is List<int>, List<Animal>)
+
+processed into:
+global imaginary class List_int {
+    int t;
+}
+
+global imaginary class List_Animal {
+    Animal t;
+}
+
+transpiles into:
+
+// list_page.h + list_page.c
+typedef struct {
+    int t;
+} List_int;
+
+typedef struct {
+    Animal* t;
+} List_Animal;
+
+
+////////////////////////////////////////////
+
+global imaginary class Animal implements Breath {
+    shared String name;
+    global number age;
+    local boolean alive;
+}
+
+global class Dog is Animal implements Growl {
+    shared boolean alive;
+
+    // from Breath
+    global function inhale() returns nothing {
+    }
+
+    // from Breath
+    global function exhale() returns nothing {
+    }
+
+    // from Growl
+    global function growl() returns string {
+        return "BARK!";
+    }
+}
+
+-->
+
+typedef struct {
+    char* Animal_name;
+    float Animal_age;
+    bool Animal_alive;
+} Animal;
+
+typedef struct {
+    Animal* parent;
+    bool Dog_alive;
+} Dog;
+
+
+////
+
+// in Math:
+
+global function add(const Vector2f a, const Vector2f b, Vector2f c) {
+
+    if (c == nothing) {
+        c = new Vector2f();
+    }
+    c.set(a.x + b.x, a.y + b.y);
+} same as c = a + b;
+
+global class Vector2f {
+    global number x, y;
+
+    global Vector2f() {
+    }
+
+    global Vector2f(number x, number y) {
+        this.x = x;
+        this.y = y;
+    }
+
+}
+
+/////////////////////////////////////
+ARRAYS.
+////////////////////////////////////
+
+number[][][] magnitudes;
+magnitudes = new number[1][2][3];
+magnitudes[0][0][0] = 5.6;
+number[] sizes = [1,2,3];
+number[][] alphas = [ [0.01,0.4,0.6] , [0, 1, 0.5] ];
+alphas[0].sort(Comparator.DEFAULT);
+
+Animal[][] animals = new Animal[3][3];
+
+library: GameCodeCore
+Data Structures, String Utilities,
+IO, Math, Basics of Graphics, ...
+
+
+// fancy but will be difficult to implement
+try {
+    x = openfile("hi.jpeg");
+
+} handle error {
+
+}
+
+c version:
+{
+    x = ...;
+    ???
+}
+
+c++ version would be simple to induce.
+later.
+
+CANNOT use same as for constructors (literal conflict),
+cannot use would be identifiers in same as expressions,
+only symbols from method call.
+
+
+global function add(vector c, vector a, vector b) returns nothing {
+
+    if (c == null) {
+        c = new vector();
+    }
+    c.set(a.x + b.x, a.y + b.y);
+} same as c = a + b; // iden::vector '=' 'iden::vector' '+' 'iden::vector'
+
+global function add(vector a, vector b) returns vector {
+    return new vector(a.x + b.x, a.y + b.y);
+} same as a + b; // 'iden::vector' '+' 'iden::vector'
+
+// error: substitution vector + vector already used <u>here</u> (underlined link)
+
+// rule: no dual meanings.
+// no substitutions for existing expressions
+
+global function add(int a, int b) returns int {
+
+} same as a + b; // ERROR: 'int + int' cannot be replaced
+
+vector dir = new vector();
+vector or = new vector();
+
+or = or + dir;
+
+
+// @annotations
+- are a preprocessor thing
+- improve quality of life
+- does not modify code semantics; used for: benchmarking, validation, performance boosts, compiler notes
+- make life better, not worse
+- user can implement own @annotations
+- maple code core comes with 4 different out-of-the box annotations: validate, pooled, override, benchmarked, ordered, toJson, fromJson, Test
+
+
+
+
+
+
+
+
+
+
+
+

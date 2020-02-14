@@ -1,0 +1,35 @@
+or  orif if if or 5.67 +-456 = == ===
+0b001131
+
+global constant complex i = new complex(0,1);
+
+atomic {
+    while (!ready) keepGateClosed();
+    ...
+
+}
+
+// ints
+0b0110101
+-0B001111
+
+0c4298655
+oc011245
+-0C5666
+
+4324234
+-3213
+
+AF004322
+
+// floats
+-4324.5435
++767.777
+6.6
+
+0h342AF
+-0H7.AF
+-0hfff.AAA
+
+0H560043.Afffad
+

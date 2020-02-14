@@ -1,0 +1,101 @@
+// preprocessor and linking
+    Read(TokenType.Preprocessor, "\\bread\\b"),
+    In(TokenType.Preprocessor, "\\bin\\b"),
+    Page(TokenType.Preprocessor, "\\bpage\\b"),
+    Book(TokenType.Preprocessor, "\\bbook\\b"),
+    From(TokenType.Preprocessor, "\\bfrom\\b"),
+
+
+    SingleLineComment(TokenType.Preprocessor, "//.*"),
+    MultiLineComment(TokenType.Preprocessor, "(?:/\\\\*(?:[^*]|(?:\\\\*+[^*/]))*\\\\*+/)|(?://.*)"),
+    GenericOpen(TokenType.Preprocessor, "<"),
+    GenericEnd(TokenType.Preprocessor, ">"),
+    SubstitutionRule(TokenType.Preprocessor, "\\bsame[\\s]+as\\b"),
+    PlusAssign(TokenType.Preprocessor, "+="),
+    MultAssign(TokenType.Preprocessor, "*="),
+    DivideAssign(TokenType.Preprocessor, "/="),
+    SubAssign(TokenType.Preprocessor, "-="),
+    AndAssign(TokenType.Preprocessor, "&="),
+    OrAssign(TokenType.Preprocessor, "|="),
+
+    // control flow
+    If(TokenType.Keyword, "\\bif\\b"),
+    Else(TokenType.Keyword, "\\belse\\b"),
+    ElseIf(TokenType.Keyword, "\\belse[\\s]+if\\b"),
+    For(TokenType.Keyword, "\\bfor\\b"),
+    Do(TokenType.Keyword, "\\bdo\\b"),
+    While(TokenType.Keyword, "\\bwhile\\b"),
+    Continue(TokenType.Keyword, "\\bcontinue\\b"),
+    Break(TokenType.Keyword, "\\bbreak\\b"),
+
+    // modifiers and qualifiers
+    Local(TokenType.Keyword, "\\blocal\\b"),
+    Global(TokenType.Keyword, "\\bglobal\\b"),
+    Shared(TokenType.Keyword, "\\bshared\\b"),
+    Static(TokenType.Keyword, "\\bstatic\\b"),
+    Fuzzy(TokenType.Keyword, "\\bfuzzy\\b"),
+    Constant(TokenType.Keyword, "\\bconstant\\b"),
+    Final(TokenType.Keyword, "\\bfinal\\b"),
+
+    // operators
+    Assign(TokenType.Operator, "="),
+    Plus(TokenType.Operator, "+"),
+    Minus(TokenType.Operator, "-"),
+    Mult(TokenType.Operator, "*"),
+    Divide(TokenType.Operator, "/"),
+    ShiftRight(TokenType.Operator, ">>"),
+    ShiftLeft(TokenType.Operator, "<<"),
+    And(TokenType.Operator, "&&"),
+    Or(TokenType.Operator, "||"),
+    Not(TokenType.Operator, "!"),
+    CompareEquals(TokenType.Operator, "=="),
+    CompareNotEqual(TokenType.Operator, "!="),
+    CompareGt(TokenType.Operator, ">"),
+    CompareLt(TokenType.Operator, "<"),
+    CompareGtEq(TokenType.Operator, ">="),
+    CompareLtEq(TokenType.Operator, "<="),
+    New(TokenType.Operator, "\\bnew\\b"),
+    Dot(TokenType.Operator, "\\."),
+
+    // symbols
+    OpenBracket(TokenType.Symbol, "("),
+    CloseBracket(TokenType.Symbol, ")"),
+    OpenCurlyBracket(TokenType.Symbol, "{"),
+    CloseCurlyBracket(TokenType.Symbol, "}"),
+    OpenSquareBracket(TokenType.Symbol, "["),
+    CloseSquareBracket(TokenType.Symbol, "]"),
+    CommaSeparator(TokenType.Symbol, ","),
+    Semicolon(TokenType.Symbol, ";"),
+    Colons(TokenType.Symbol, ":"),
+
+    // function declarations keywords
+    Function(TokenType.Keyword, "\\bfunction\\b"),
+    Return(TokenType.Keyword, "\\breturn\\b"),
+    Returns(TokenType.Keyword, "\\breturns\\b"),
+    Atomic(TokenType.Keyword, "\\batomic\\b"),
+
+    // exception handling
+
+
+    // class declarations
+    Class(TokenType.Keyword, "\\bclass\\b"),
+    Interface(TokenType.Keyword, "\\binterface\\b"),
+    Enum(TokenType.Keyword, "\\benum\\b"),
+    Is(TokenType.Keyword, "\\bis\\b"),
+    Imaginary(TokenType.Keyword, "\\bimaginary\\b"),
+    Implements(TokenType.Keyword, "\\bimplements\\b"),
+
+    // identifiers
+    Identifier(TokenType.Identifier, "\\b_*[a-zA-Z][_a-zA-Z0-9]*\\b"),
+
+    // literals
+    NumLiteral(TokenType.NumberLiteral, "[+-]?(0b|0B)[0-1]+", // binary
+                                                         "[+-]?(0c|0C)[0-9]+",  // octal
+                                                         "[+-]?(0h|0H)[0-9A-Fa-f]+((\\.)[0-9A-Fa-f]+)?",  // hexadecimal
+                                                         "[+-]?[0-9]+((\\.)[0-9]+)?"), // decimal
+    BooleanLiteral(TokenType.BooleanLiteral, "true", "false"),
+    StringLiteral(TokenType.StringLiteral, "\"([^\\\"]|\\.)*\""),
+
+
+
+    ;

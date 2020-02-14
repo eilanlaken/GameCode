@@ -1,0 +1,17 @@
+
+global function add(vector a, vector b) returns vector {
+    string log = "adding vectors";
+    vector c = new vector(a.x + b.x, a.y + b.y);
+    console.print(log);
+} same as a +    --b;
+
+
+shared meta function rename(string name) returns string {
+
+    stringModifier strMod = new stringModifier();
+    strMod.replaceCharAt(0, name, "re");
+    return name;
+
+} same as name!;
+
+

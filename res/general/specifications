@@ -1,0 +1,103 @@
+# keywords:
+
+# pre-processor
+# comments:
+/*
+*/
+//
+same as
+
+# types:
+boolean
+number
+string
+array
+nothing
+
+# access modifiers and qualifiers:
+static, local, global, shared, fuzzy
+constant // cannot change value and reference
+final // cannot change value for simpletons, cannot change reference for objects (what about arrays?)
+
+# methods declarations
+function
+returns
+return
+
+# class declarations
+class
+interface
+imaginary
+is
+implements
+this
+enum
+new
+
+# linking:
+read
+from
+book
+page
+in
+/* example: page vectors.gc from book math; */
+/* example: read page vectors.gc from book math; */
+/* example: read book math; */
+
+# operators and symbols:
++
+-
+*
+(
+)
+[
+]
+{
+}
+!
+&&
+||
+/
+%
+.
+&
+|
+!=
+==
+>
+<
+>=
+<=
+,
+;
++=
+-=
+*=
+/=
+&=
+|=
+
+
+# control flow:
+if
+else
+for
+do
+while
+break
+continue
+
+# restrictions
+const
+final
+
+#exception handling:
+try
+error
+handle error
+
+# synchronization:
+atomic
+
+
+
