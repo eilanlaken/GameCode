@@ -8,6 +8,9 @@ COLLECTION_HEADER:
 COLLECTION_CODE:
 
 
+COLLECTION_MEMBERS_DECLARATION_ZONE:
+    COMMA_SEPARATED_COLLECTION_MEMBERS_DECLARATION_LIST ;
+
 
 
 
@@ -28,6 +31,8 @@ global collection Cards {
     global Cards(int rank, Suit suit) {
 
     }
+
+
 
 }
 
