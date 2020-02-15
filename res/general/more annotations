@@ -1,0 +1,123 @@
+
+global annotation @benchmark applies to functions {
+
+    verbose default ("true");
+
+    // built in variables: @FUNCTION_NAME @FUNCTION_PARAMS
+    // @FUNCTION_CALL
+
+    <@substitutionsRules>
+
+        <@rule id="benchmarking" type="replace">
+            <@before>
+              @functionCall
+           </@before>
+
+          <@after>
+              float timeBefore = system.time.getCurrentTime();
+              @functionCall
+              float elapsedTime = system.time.getCurrentTime(); - timeBefore;
+              if (@verbose)
+                system.out.print("function @functionName at @lineCalled executed in " + elapsedTime);
+              else
+                system.out.print("@functionName took " + elapsedTime);
+           </@after>
+        </@rule>
+
+    </@substitutionsRules>
+
+
+    ?
+    <@lexerRules>
+    </@lexerRules>
+    ?
+
+    <@syntaxRules>
+    </@syntaxRules>
+
+
+    <@semanticRules>
+    </@semanticRules>
+
+}
+
+
+global annotation @overrides applies to functions {
+
+    <@semanticRules>
+        <@rule type="require">
+            !(@function.overrides == null)
+        </@rule>
+    </@semanticRules>
+
+}
+
+global annotation @ordered applies to classes {
+
+    by;
+
+    <@substitutions>
+        <@rule type="add">
+
+            global meta function ordered_compare(@CLASS_NAME a, @CLASS_NAME b> returns int {
+                if (a.@by == b.@by) return 0;
+                if (a.@by > b.@by) return 1;
+                return -1;
+            }
+
+            global meta function ordered_equals(@CLASS_NAME a, @CLASS_NAME b) returns boolean {
+                if (ordered_compare(a,b)) == 0 return true;
+                return false;
+            } same as a === b;
+
+            global meta function ordered_greaterThan(@CLASS_NAME a, @CLASS_NAME b) returns boolean {
+
+            } same as a > b;
+
+
+        </@rule>
+    </@substitutions>
+
+}
+
+global annotation @json applies to classes {
+
+    toJson default "toJson()",
+    fromJson default "fromJson(string json)",
+    specs default "bean",
+    ;
+
+    <@subRule>
+
+        <@rule type="add" apply="#{@specs == "bean"}">
+            <@java>
+
+                for (string argName : @CLASS_MEMBERS) {
+                    if (hasGetter(argName)) {
+                        write();
+                        replace();
+                        remove();
+                    }
+                }
+
+
+                private boolean hasGetter(String arg) {
+                    String[] classMethods = @CLASS_METHODS;
+                    for () ... {
+                        if (...) return true;
+                    }
+                    return false;
+                }
+
+            </@java>
+        </@rule>
+
+        <@rule type="add" apply="#{@specs == "globalOnly"}">
+
+        </@rule>
+
+    </@subRule>
+
+
+
+}

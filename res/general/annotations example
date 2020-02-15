@@ -56,7 +56,7 @@ example.
 
 template:
 
-<@codeTemplate name="ordering">
+<@codeTemplate id="ordering">
 global meta function ordered_equals(<CLASS_NAME> a, <CLASS_NAME> b) returns boolean {
     if (a.<by> == b.<by>) return true;
     return false;
@@ -71,6 +71,17 @@ global meta function ordered_greater_equals(...)
 
 */
 </@codeTemplate>
+
+<@codeTemplate id="benchmarking">
+float timeBefore = system.time.getCurrentTime();
+
+float elapsedTime = system.time.getCurrentTime() - timeBefore;
+if (@verbose)
+system.out.print("call to @FUNCTION_NAME took " elapsedTime + "@units");
+else
+</@codeTemplate> correction:
+
+
 
 + needs substitution rules
 + needs lexer expansion set
