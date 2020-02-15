@@ -1,0 +1,92 @@
+/*
+// example:
+
+@ordered(by: x * x + getY() ^ 2)
+shared class vector {
+
+    global float x;
+    global float y;
+
+}
+
+// or alternatively
+@ordered(by: getLengthSquared())
+shared class vector {
+
+    global float x;
+    global float y;
+
+}
+
+@json(to: "toJson", from: "fromJson")
+global class Person {
+
+}
+
+// no parameters example:
+
+@noisy // every time a Dog dog is created, println "created: " + dog.
+local class Dog {
+
+}
+
+global annotation @benchmark applies to function {
+
+    units default "ms",
+    verbose default "true";
+
+
+
+
+}
+
+global annotation @ordered applies to class {
+
+    by,
+    inverse default "false";
+
+
+
+}
+
+/*
+code template: where, what
+
+example.
+
+template:
+
+<@codeTemplate name="ordering">
+global meta function ordered_equals(<CLASS_NAME> a, <CLASS_NAME> b) returns boolean {
+    if (a.<by> == b.<by>) return true;
+    return false;
+} same as a === b;
+
+global meta function ordered_greater_than(<CLASS_NAME> a, <CLASS_NAME> b) returns boolean {
+    if (a.<by> > b.<by>) return true;
+    return false;
+} same as a > b;
+
+global meta function ordered_greater_equals(...)
+
+*/
+</@codeTemplate>
+
++ needs substitution rules
++ needs lexer expansion set
++ needs syntax expansion set
++ needs semantic expansion set
+
+
+// --> application:
+
+@benchmark
+@benchmark(units = "seconds")
+@benchmark(verbose = "true")
+@benchmark(units = "ms", verbose = "false")
+global function render(SpriteBatch batch) returns nothing {
+
+}
+
+*/
+
