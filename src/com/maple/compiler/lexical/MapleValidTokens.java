@@ -105,6 +105,9 @@ public enum MapleValidTokens {
     Is(TokenType.Is, "\\b(is)\\b.*"),
     Implements(TokenType.Implements, "\\b(implements)\\b.*"),
     New(TokenType.New, "\\b(new)\\b.*"),
+    This(TokenType.This, "\\b(this)\\b.*"),
+    Parent(TokenType.Parent, "\\b(this)\\b.*"),
+    Typeof(TokenType.Typeof, "\\b(typeof)\\b.*"),
 
     // annotations
     Annotation(TokenType.Annotation, "\\b(annotation)\\b.*"),

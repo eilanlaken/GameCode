@@ -1,0 +1,5 @@
+TODO:
+
+handle:
+new, typeof, this, parent, castings, variable declarations, rest of the unspecified grammar,
+fixing, code generating grammar, left recursion removal, parsing of a simple program.

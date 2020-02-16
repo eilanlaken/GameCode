@@ -103,6 +103,9 @@ enum TokenType {
     Interface,
     Collection,
     New,
+    This,
+    Parent,
+    Typeof,
 
     // syntax and primitives types
     Int,
