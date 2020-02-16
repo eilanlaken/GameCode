@@ -5,11 +5,8 @@ TERM:
     identifier
     COMPOUND
 
-/*
-example for a compound term:
-pill.x.getArr()[5+b.s][5].getM()
-*/
 COMPOUND:
+    identifier
     ARRAY_ACCESS
     FUNCTION_CALL
     identifier . COMPOUND

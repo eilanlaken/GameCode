@@ -1,4 +1,4 @@
-// grammar page
+/* function declarations only. */
 
 
 CONSTRUCTOR:
