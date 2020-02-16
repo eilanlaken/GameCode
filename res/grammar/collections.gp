@@ -26,24 +26,3 @@ COMMA_SEPARATED_COLLECTION_MEMBERS_DECLARATION_LIST:
     identifier ( ARG_LIST ) , COMMA_SEPARATED_COLLECTION_MEMBERS_DECLARATION_LIST
 
 
-
-/*
-
-// collection declaration code example:
-
-global collection Cards {
-
-    aceOfSpades(13, Suit.Spades),
-
-    global constant int rank;
-    global constant Suit suit;
-    global constant Color color; // computed
-
-    // only a single constructor
-    global Cards(int rank, Suit suit) {
-
-    }
-
-}
-
-*/
