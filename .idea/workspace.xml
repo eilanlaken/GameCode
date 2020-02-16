@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34ef123e-c6dc-4af5-be81-4f9d9980a9c9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/res/grammar/annotations.gp" beforeDir="false" afterPath="$PROJECT_DIR$/res/grammar/annotations.gp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/grammar/classes.gp" beforeDir="false" afterPath="$PROJECT_DIR$/res/grammar/classes.gp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/grammar/collections.gp" beforeDir="false" afterPath="$PROJECT_DIR$/res/grammar/collections.gp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/grammar/functions.gp" beforeDir="false" afterPath="$PROJECT_DIR$/res/grammar/functions.gp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/grammar/variables.gp" beforeDir="false" afterPath="$PROJECT_DIR$/res/grammar/variables.gp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/grammar/classes.gp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+            <state relative-caret-position="51">
+              <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -51,15 +50,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
               <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/grammar/statements.gp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -91,11 +81,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/grammar/functions.gp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
               <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/grammar/annotations.gp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -141,7 +140,6 @@
         <option value="$PROJECT_DIR$/res/grammar/statements.gp" />
         <option value="$PROJECT_DIR$/res/grammar/terminals.gp" />
         <option value="$PROJECT_DIR$/res/general/annotations example" />
-        <option value="$PROJECT_DIR$/res/grammar/annotations.gp" />
         <option value="$PROJECT_DIR$/src/com/maple/compiler/lexical/TokenType.java" />
         <option value="$PROJECT_DIR$/src/com/maple/compiler/lexical/MapleValidTokens.java" />
         <option value="$PROJECT_DIR$/res/general/more annotations" />
@@ -165,9 +163,10 @@
         <option value="$PROJECT_DIR$/res/grammar/commons.gp" />
         <option value="$PROJECT_DIR$/src/com/maple/compiler/GameCodeEntities/functions/GCFunction.java" />
         <option value="$PROJECT_DIR$/res/grammar/collections.gp" />
-        <option value="$PROJECT_DIR$/res/grammar/functions.gp" />
         <option value="$PROJECT_DIR$/res/grammar/variables.gp" />
         <option value="$PROJECT_DIR$/res/grammar/classes.gp" />
+        <option value="$PROJECT_DIR$/res/grammar/functions.gp" />
+        <option value="$PROJECT_DIR$/res/grammar/annotations.gp" />
       </list>
     </option>
   </component>
@@ -674,13 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/grammar/annotations.gp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/GameCodeEntities/functions/GCFunction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -756,8 +748,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/grammar/classes.gp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        <state relative-caret-position="51">
+          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -765,6 +757,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/grammar/annotations.gp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
         </state>
       </provider>
     </entry>

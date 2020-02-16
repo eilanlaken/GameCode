@@ -31,6 +31,23 @@ ANNOTATION_PARAM:
 
 
 
+ANNOTATION_USAGE:
+    @ identifier
+    @ identifier ( ANNOTATION_ARGS_INIT )
+
+
+// TODO: ANNOTATIONS_ARG_INIT
+ANNOTATIONS_ARG_INIT:
+    
+
+
+
+
+
+
+
+
+
 
 
 
