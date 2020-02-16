@@ -15,3 +15,6 @@ shared meta function rename(string name) returns string {
 } same as name!;
 
 
+global meta constant float pi = 3.14;
+
+
