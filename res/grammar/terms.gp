@@ -4,6 +4,7 @@ TERM:
     LITERAL
     identifier
     COMPOUND
+    new BROAD_TYPE ( ARGS_LIST )
 
 COMPOUND:
     identifier
