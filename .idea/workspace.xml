@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34ef123e-c6dc-4af5-be81-4f9d9980a9c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/res/general/more annotations" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/general/annotations example" beforeDir="false" afterPath="$PROJECT_DIR$/res/general/annotations example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/general/more annotations" beforeDir="false" afterPath="$PROJECT_DIR$/res/general/more annotations" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/grammar/annotations.gp" beforeDir="false" afterPath="$PROJECT_DIR$/res/grammar/annotations.gp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/maple/compiler/lexical/MapleValidTokens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/maple/compiler/lexical/MapleValidTokens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/maple/compiler/lexical/TokenType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/maple/compiler/lexical/TokenType.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,11 +28,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/lexical/MapleValidTokens.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
+            <state relative-caret-position="438">
+              <caret line="112" column="52" selection-start-line="112" selection-start-column="52" selection-end-line="112" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/lexical/TokenType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
             </state>
           </provider>
         </entry>
@@ -39,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/grammar/annotations.gp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="425">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -54,20 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/general/more annotations">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/grammar/expressions.gp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="682">
+              <caret line="162" column="17" selection-start-line="162" selection-start-column="17" selection-end-line="162" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -124,8 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/maple/compiler/lexical/TokenType.java" />
-        <option value="$PROJECT_DIR$/src/com/maple/compiler/lexical/MapleValidTokens.java" />
         <option value="$PROJECT_DIR$/res/examples/test.gc" />
         <option value="$PROJECT_DIR$/src/com/maple/compiler/parsing/generators/ParserGenerator.java" />
         <option value="$PROJECT_DIR$/src/com/maple/compiler/parsing/parser/grammar/Grammar.java" />
@@ -141,9 +140,11 @@
         <option value="$PROJECT_DIR$/res/grammar/terminals.gp" />
         <option value="$PROJECT_DIR$/res/grammar/functions.gp" />
         <option value="$PROJECT_DIR$/res/grammar/collections.gp" />
-        <option value="$PROJECT_DIR$/res/grammar/annotations.gp" />
         <option value="$PROJECT_DIR$/res/general/annotations example" />
         <option value="$PROJECT_DIR$/res/general/more annotations" />
+        <option value="$PROJECT_DIR$/res/grammar/annotations.gp" />
+        <option value="$PROJECT_DIR$/src/com/maple/compiler/lexical/TokenType.java" />
+        <option value="$PROJECT_DIR$/src/com/maple/compiler/lexical/MapleValidTokens.java" />
       </list>
     </option>
   </component>
@@ -399,13 +400,6 @@
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580622384099" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/lexical/TokenType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="95" column="9" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/examples/test.gc">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -479,13 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/lexical/MapleValidTokens.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/grammar/expressions.gp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -528,13 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/grammar/annotations.gp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/general/annotations example">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
@@ -544,8 +524,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/general/more annotations">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+        <state relative-caret-position="682">
+          <caret line="162" column="17" selection-start-line="162" selection-start-column="17" selection-end-line="162" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/grammar/annotations.gp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/lexical/TokenType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/lexical/MapleValidTokens.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="112" column="52" selection-start-line="112" selection-start-column="52" selection-end-line="112" selection-end-column="52" />
         </state>
       </provider>
     </entry>

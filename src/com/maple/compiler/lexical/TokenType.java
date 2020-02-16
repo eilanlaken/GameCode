@@ -116,7 +116,11 @@ enum TokenType {
     Atomic,
 
     // annotations
-    Annotation
+    Annotation,
+    At,
+    AppliesTo,
+    Default,
+
 
 
     ;

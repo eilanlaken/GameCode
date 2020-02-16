@@ -89,10 +89,10 @@ global annotation @json applies to classes {
 
     <@subRule>
 
-        <@rule type="add" apply="#{@specs == "bean"}">
-            <@java>
+        <@rule type="java" use="#{@specs=="bean"}">
 
-                for (string argName : @CLASS_MEMBERS) {
+
+                for (String argName : @CLASS_MEMBERS) {
                     if (hasGetter(argName)) {
                         write();
                         replace();
@@ -109,15 +109,57 @@ global annotation @json applies to classes {
                     return false;
                 }
 
-            </@java>
+
         </@rule>
 
         <@rule type="add" apply="#{@specs == "globalOnly"}">
 
         </@rule>
 
+
+
     </@subRule>
 
+}
 
+-->
+public class GeneratedFromAnnotationJSON {
+
+    @injected
+    private Error errors;
+
+    private List<SubRule> substitutionRules = new ArrayList<SubRule>();
+    private List<SemanticRule> semanticRules = new ArrayList<SemanticRule>();
+
+    public void applyRules(Program program, Compiler compiler) {
+
+    }
+
+}
+
+
+global annotation @override applies to functions {
+
+    <@semantic type="java">
+        if (@FUNCTION.overrides == null) errors.add(@FUNCTION.line + "function @FUNCTION_NAME does not
+            override anything. Remove @override annotation");
+    </@semantic>
+
+}
+
+
+global annotation @benchmark applies to function {
+
+    <@substitution>
+        for (FunctionCall fc : @FUNCTION_CALLS) {
+            replace(fc, "int beforeTime ...";
+        }
+    </@substitution>
+
+    // no syntax additions.
+
+    <@semantics>
+
+    </@semantics>
 
 }

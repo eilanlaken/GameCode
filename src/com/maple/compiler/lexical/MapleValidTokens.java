@@ -106,8 +106,11 @@ public enum MapleValidTokens {
     Implements(TokenType.Implements, "\\b(implements)\\b.*"),
     New(TokenType.New, "\\b(new)\\b.*"),
 
-        // pre processor
-    Annotation(TokenType.Annotation, "(\\@).*"),
+    // annotations
+    Annotation(TokenType.Annotation, "\\b(annotation)\\b.*"),
+    At(TokenType.Annotation, "(\\@).*"),
+    AppliesTo(TokenType.AppliesTo, "\\b(same[\\s]+as)\\b.*"),
+    Default(TokenType.Default, "\\b(default)\\b.*"),
 
     // synchronization
     Atomic(TokenType.Atomic, "\\b(atomic)\\b.*"),
