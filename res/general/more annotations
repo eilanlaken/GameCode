@@ -150,6 +150,13 @@ global annotation @override applies to functions {
 
 global annotation @benchmark applies to function {
 
+    /*
+    built in variables for functions:
+    name, argument list,
+    function calls, return type, override, access modifiers,
+    is atomic, class belongingity.
+    */
+
     <@substitution>
         for (FunctionCall fc : @FUNCTION_CALLS) {
             replace(fc, "int beforeTime ...";
