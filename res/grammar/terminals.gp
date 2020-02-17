@@ -32,6 +32,7 @@ PRIMITIVE:
 LITERALS:
     int_literal
     float_literal
+    double_literal
     boolean_literal
     string_literal
     ARRAY_LITERAL

@@ -65,6 +65,8 @@ enum TokenType {
     IntHexadecimalLiteral,
     FloatDecimalLiteral,
     FloatHexadecimalLiteral,
+    DoubleDecimalLiteral,
+    DoubleHexadecimalLiteral,
     BooleanLiteral,
     StringLiteral,
     Null,
@@ -110,6 +112,7 @@ enum TokenType {
     // syntax and primitives types
     Int,
     Float,
+    Double,
     String,
     Boolean,
 

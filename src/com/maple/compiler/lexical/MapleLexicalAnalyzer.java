@@ -1,6 +1,6 @@
 package com.maple.compiler.lexical;
 
-import com.maple.compiler.utils.Debugger;
+import com.maple.compiler.gcutils.Debugger;
 
 import java.util.ArrayList;
 import java.util.List;

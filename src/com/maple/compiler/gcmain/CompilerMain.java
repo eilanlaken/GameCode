@@ -1,12 +1,8 @@
 package com.maple.compiler.gcmain;
 
 import com.maple.compiler.lexical.MapleLexicalAnalyzer;
-import com.maple.compiler.lexical.Token;
-import com.maple.compiler.lexical.MapleValidTokens;
-import com.maple.compiler.utils.Debugger;
-import com.maple.compiler.utils.FileUtils;
-
-import java.util.List;
+import com.maple.compiler.gcutils.Debugger;
+import com.maple.compiler.gcutils.FileUtils;
 
 public class CompilerMain {
 

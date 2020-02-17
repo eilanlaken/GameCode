@@ -1,6 +1,6 @@
 package com.maple.compiler.lexical;
 
-import com.maple.compiler.utils.RegExUtils;
+import com.maple.compiler.gcutils.RegExUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -94,6 +94,7 @@ public enum MapleValidTokens {
         // literals and building blocks (primitives)
     Int(TokenType.Int, "\\b(int)\\b.*"),
     Float(TokenType.Float, "\\b(float)\\b.*"),
+    Double(TokenType.Double, "\\b(double)\\b.*"),
     String(TokenType.String, "\\b(string)\\b.*"),
     Boolean(TokenType.Boolean, "\\b(boolean)\\b.*"),
 
@@ -124,6 +125,8 @@ public enum MapleValidTokens {
     StringLiteral(TokenType.StringLiteral, "(\"((\\\\.)|(\\\\\")|([^\"\\\\]))*\").*"), // needs more testing
     FloatDecimalLiteral(TokenType.FloatDecimalLiteral, "\\b([+-]?[0-9]+\\.[0-9]+)\\b.*"), //[-+]?[0-9]+\.[0-9]+
     FloatHexadecimalLiteral(TokenType.FloatHexadecimalLiteral, "\\b([0-9a-fA-F]*\\.[0-9a-fA-F]+)\\b.*"),
+    DoubleDecimalLiteral(TokenType.DoubleDecimalLiteral, "\\b([+-]?[0-9]+\\.[0-9]+d)\\b.*"),
+    DoubleHexadecimalLiteral(TokenType.DoubleHexadecimalLiteral, "\\b([0-9a-fA-F]*\\.[0-9a-fA-F]+d)\\b.*"),
     IntBinaryLiteral(TokenType.IntBinaryLiteral, "\\b([+-]?(0b|0B)[01]+)\b.*"),
     IntOctalLiteral(TokenType.IntOctalLiteral, "\\b([+-]?(0c|0C)[0-7]+)\\b.+"),
     IntDecimalLiteral(TokenType.IntDecimalLiteral, "\\b([+-]?[0-9]+)\\b.*"),

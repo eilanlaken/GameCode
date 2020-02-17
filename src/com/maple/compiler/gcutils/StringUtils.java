@@ -1,4 +1,4 @@
-package com.maple.compiler.utils;
+package com.maple.compiler.gcutils;
 
 public class StringUtils {
 
