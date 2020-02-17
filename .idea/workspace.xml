@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34ef123e-c6dc-4af5-be81-4f9d9980a9c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/maple/compiler/preprocessor/AnnotationsApplier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/maple/compiler/preprocessor/SameAsSubstitutionsHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/maple/compiler/preprocessor/TemplateUnfolding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/grammar/pages.gp" beforeDir="false" afterPath="$PROJECT_DIR$/res/grammar/pages.gp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/maple/compiler/parsing/parser/grammar/Grammar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/maple/compiler/parsing/parser/grammar/Grammar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/maple/compiler/parsing/parser/grammar/Production.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/maple/compiler/parsing/parser/grammar/Production.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/maple/compiler/gcerrors/GCError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/maple/compiler/lexical/MapleValidTokens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/maple/compiler/lexical/MapleValidTokens.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/maple/compiler/parsing/parser/grammar/Symbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/maple/compiler/parsing/parser/grammar/Symbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/maple/compiler/preprocessor/TemplateUnfolding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/maple/compiler/preprocessor/TemplateUnfolding.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,19 +21,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/grammar/pages.gp">
+        <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/preprocessor/TemplateUnfolding.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/preprocessor/TemplateUnfolding.java">
+        <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/transpiler/GameCodeToCTranspiler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+              <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/semantics/SemanticAnalyzer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/lexical/MapleValidTokens.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="135" column="60" selection-start-line="135" selection-start-column="60" selection-end-line="135" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -76,38 +92,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/parsing/parser/grammar/Symbol.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            <state relative-caret-position="136">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/grammar/functions.gp">
+        <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/gcerrors/GCError.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/grammar/collections.gp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="81" lean-forward="true" selection-start-line="25" selection-start-column="81" selection-end-line="25" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/grammar/annotations.gp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -172,13 +170,15 @@
         <option value="$PROJECT_DIR$/res/grammar/terms.gp" />
         <option value="$PROJECT_DIR$/res/grammar/_TODO_LIST" />
         <option value="$PROJECT_DIR$/src/com/maple/compiler/lexical/TokenType.java" />
-        <option value="$PROJECT_DIR$/src/com/maple/compiler/lexical/MapleValidTokens.java" />
         <option value="$PROJECT_DIR$/res/grammar/terminals.gp" />
         <option value="$PROJECT_DIR$/res/grammar/pages.gp" />
         <option value="$PROJECT_DIR$/src/com/maple/compiler/preprocessor/SameAsSubstitutionsHandler.java" />
         <option value="$PROJECT_DIR$/src/com/maple/compiler/parsing/parser/grammar/Production.java" />
         <option value="$PROJECT_DIR$/src/com/maple/compiler/parsing/parser/grammar/Grammar.java" />
         <option value="$PROJECT_DIR$/src/com/maple/compiler/parsing/parser/grammar/Symbol.java" />
+        <option value="$PROJECT_DIR$/src/com/maple/compiler/gcerrors/GCError.java" />
+        <option value="$PROJECT_DIR$/src/com/maple/compiler/preprocessor/TemplateUnfolding.java" />
+        <option value="$PROJECT_DIR$/src/com/maple/compiler/lexical/MapleValidTokens.java" />
       </list>
     </option>
   </component>
@@ -244,6 +244,20 @@
               <item name="GameCode Compiler" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="gcerrors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GameCode Compiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GameCode Compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="lexical" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GameCode Compiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GameCode Compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="compiler" type="462c0819:PsiDirectoryNode" />
               <item name="parsing" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -269,6 +283,20 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="compiler" type="462c0819:PsiDirectoryNode" />
               <item name="preprocessor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GameCode Compiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GameCode Compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="semantics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GameCode Compiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GameCode Compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="transpiler" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -448,13 +476,6 @@
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580622384099" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/parsing/parser/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/gcutils/RegExUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -619,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/semantics/SemanticAnalyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/gcutils/FileUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -644,13 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/transpiler/GameCodeToCTranspiler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -724,13 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/lexical/MapleValidTokens.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="115" column="61" lean-forward="true" selection-start-line="115" selection-start-column="61" selection-end-line="115" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/grammar/interfaces.gp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -766,13 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/preprocessor/TemplateUnfolding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/preprocessor/SameAsSubstitutionsHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -803,8 +796,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/parsing/parser/grammar/Symbol.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/gcerrors/GCError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/preprocessor/TemplateUnfolding.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/transpiler/GameCodeToCTranspiler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/semantics/SemanticAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/maple/compiler/lexical/MapleValidTokens.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="135" column="60" selection-start-line="135" selection-start-column="60" selection-end-line="135" selection-end-column="60" />
         </state>
       </provider>
     </entry>

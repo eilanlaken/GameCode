@@ -133,7 +133,7 @@ public enum MapleValidTokens {
     IntHexadecimalLiteral(TokenType.IntHexadecimalLiteral, "\\b([+-]?(0x|0X)[0-9a-fA-F]+)\\b.*"),
     Null(TokenType.Null, "\\b(null)\\b.*"),
 
-    // exception handling?
+    // exception handling? no exception handling in gamecode
 
     ;
 
